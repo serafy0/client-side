@@ -1,0 +1,76 @@
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: wheat;
+}
+
+.container {
+  height: 500px;
+  padding-top: 240px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image_section {
+  background-image: url(https://st2.depositphotos.com/1177973/6090/i/450/depositphotos_60902357-stock-photo-pencils-in-metal-holder.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.title_section {
+  text-align: center;
+}
+
+.search_section {
+  background: #d82a4e;
+}
+
+.course_section {
+  background-color: black;
+}
+
+.course_card {
+  background-color: white;
+  height: 160px;
+  width: 200px;
+}
+.course_group {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+}
+
+.card_text {
+  color: black;
+  text-align: center;
+  font-size: px;
+  font-weight: 500;
+}
+
+body {
+  color: white;
+}
+
+form {
+  padding: 44px 38px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form.course_form {
+  background: #fff;
+}
+
+input {
+  min-width: 198px;
+  padding: 16px 10px;
+}
+
+button {
+  background-color: red;
+  min-width: 198px;
+  padding: 16px 10px;
+}
