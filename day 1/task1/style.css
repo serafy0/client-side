@@ -4,12 +4,16 @@ h2 {
   color: wheat;
 }
 
+
 .container {
   height: 500px;
   padding-top: 240px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+
 }
 
 .image_section {
@@ -36,6 +40,7 @@ h2 {
   height: 160px;
   width: 200px;
 }
+
 .course_group {
   display: flex;
   flex-wrap: wrap;
