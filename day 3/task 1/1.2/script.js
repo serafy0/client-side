@@ -6,8 +6,7 @@ while(!string || string==""){
 
 }
 
-let countE = new RegExp(/(e|E).*/)
 
-let numberOfmatches = string.match(countE)
+let numberOfEs = string.toLowerCase().split('e').length -1
 
-document.write(`${string} includes ${numberOfmatches.length} e letters`)
+document.write(`${string} includes ${numberOfEs} e letters`)

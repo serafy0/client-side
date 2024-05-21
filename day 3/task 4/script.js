@@ -6,8 +6,6 @@ function newFunc(a, b) {
     console.log(a,b)
 }
 
-newFunc(1,2,3);
-newFunc(1,2);
 
 
 function addFunction(){
@@ -27,7 +25,6 @@ function addFunction(){
 
 }
 
-addFunction(1,2,3,4)
 
 
 function reverseFunction(){
@@ -40,3 +37,17 @@ function reverseFunction(){
 
 
 }
+
+function test(){
+newFunc(1,2);
+
+addFunction(1,2,3,4)
+
+
+console.log(reverseFunction(5,4,3,2,1))
+
+newFunc(1,2,4);
+
+}
+
+test()
