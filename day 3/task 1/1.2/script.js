@@ -1,4 +1,6 @@
 
+function takeInput(){
+
 let string
 
 while(!string || string==""){
@@ -10,3 +12,6 @@ while(!string || string==""){
 let numberOfEs = string.toLowerCase().split('e').length -1
 
 document.write(`${string} includes ${numberOfEs} e letters`)
+}
+
+takeInput();

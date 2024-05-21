@@ -1,4 +1,3 @@
-// alert("please add  numbers")
 function takeInput() {
     let numberOfnumber
     while (!numberOfnumber || numberOfnumber < 2 || numberOfnumber > 20 || !Number.isInteger(numberOfnumber)) {
@@ -28,7 +27,7 @@ function calcualte(array) {
     let sum, multiplyResult, minusResult, divisionnResult
     sum = multiplyResult = minusResult = divisionnResult = array[0]
     let sumString = `${array[0]}`;
-    for (let i = 1; i <= array.length-1; i++) {
+    for (let i = 1; i <= array.length - 1; i++) {
         console.log(i, sum)
         sum += array[i]
         multiplyResult *= array[i]

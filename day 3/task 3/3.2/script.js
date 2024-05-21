@@ -10,7 +10,7 @@ function takeInput() {
 
 }
 
-function test() {
+function run() {
 
     let arraySize = takeInput() - 1;
     let array = new Array(arraySize);
@@ -31,8 +31,16 @@ function test() {
     document.write("<br/>")
     document.write(`your values in des order: ${array.sort((a, b) => b - a)}`)
     document.write("<br/>")
-    document.write(`your values in asc order: ${array.sort()}`)
+    document.write(`your values in asc order: ${array.sort((a, b) => a - b)}`)
     document.write("<br/>")
 }
 
+
+function test(){
+    let array = [1 ,10 ,2 ,20 , 5]
+    console.log(`your values in des order: ${array.sort((a, b) => b - a)}`)
+    console.log(`your values in asc order: ${array.sort()}`)
+}
+
 test()
+run()

@@ -29,6 +29,16 @@ function checkFormat(userInput) {
     }
 
 }
+function getDay(date){
+    
+    let dayName =  date.toLocaleString('en-us', {weekday:'long'})
+    console.log("day is: ",dayName)
+    return  dayName
+
+
+}
+
+
 function test() {
     let birth_date
     while (!birth_date|| birth_date != 0) {
@@ -40,12 +50,16 @@ function test() {
             alert("your format is wrong")
         } else {
             console.log(userCorrect)
+            getDay(userCorrect);
             alert(userCorrect.toString());
 
         }
     }
 }
 
+
+
 test()
+
 
 
