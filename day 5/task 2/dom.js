@@ -84,12 +84,12 @@ function styleTable(){
 
 }
 
+  
+
 
 function addUsers(users) {
     let table = document.getElementById("table-body")
     console.log(table)
-    let body = table.get
-    console.log(body)
 
     for (let i = 0; i < users.length; i++) {
 

@@ -19,7 +19,7 @@ function changeImage() {
 
     let image = header.childNodes[1];
     let secondImage = image.cloneNode()
-    console.log(image)
+    // console.log(image)
     let center = document.getElementsByClassName("center")
 
     let footer = header.cloneNode();
