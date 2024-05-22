@@ -33,6 +33,8 @@ function takeDateAndReturnDay(datString){
 
 }
 
+let date = promt("enter date ")
+
 takeDateAndReturnDay("1999-10-15")
 
 takeDateAndReturnDay("1999-09-31") //wrong date
