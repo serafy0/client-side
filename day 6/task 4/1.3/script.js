@@ -1,5 +1,4 @@
 let buttons = document.getElementsByTagName("button");
-// input.add
 
 
 
@@ -11,7 +10,12 @@ for (let i = 0; i < buttons.length; i++) {
 function handle(e) {
 
 
-
+    console.log(e.target.innerText)
+    if(e.target.innerText === "👁️"){
+        e.target.innerText = "❎"
+    }else{
+        e.target.innerText= "👁️"
+    }
 
 
     let passwordNumber;
