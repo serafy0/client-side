@@ -1,0 +1,13 @@
+.eye {
+    padding-left: 25px;
+    background: url("eye.svg") no-repeat right;
+    background-size: 20px;
+
+}
+
+.crossed_eye{
+    padding-left: 25px;
+    background: url("eye-slash.svg") no-repeat right;
+    background-size: 20px;
+
+}

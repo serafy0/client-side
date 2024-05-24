@@ -29,22 +29,22 @@ function takeInput() {
 
 
 
-function createTable() {
-    document.write(`<table id="main-table" border="2" width="50%">
-         <thead>
-           <tr>
-                <th>name</th>
-                 <th>age</th>
-             </tr>
-        </thead>
-         <tbody id="table-body">
+// function createTable() {
+//     document.write(`<table id="main-table" border="2" width="50%">
+//          <thead>
+//            <tr>
+//                 <th>name</th>
+//                  <th>age</th>
+//              </tr>
+//         </thead>
+//          <tbody id="table-body">
             
-         </tbody>
-    </table>`)
+//          </tbody>
+//     </table>`)
 
 
 
-}
+// }
 
 
   
@@ -123,23 +123,16 @@ function styleTable(){
           console.log(cell)
     
           cell.style.border = "5px solid red";
-          cell.style.backgroundColor = "green"
+          cell.style.backgroundColor = "grey"
         }
       }
   
-
-    // tableHead.style.backgroundColor = "green"
-    // tableHead.style.border = "5px solid red";
-    // console.log(tableHead)
-
-
-    // table
 }
 
 function SimplerTableStyle(){
         let style = document.createElement("style");
       
-        style.textContent = `table, th, td { border: 1px solid black; }`;
+        style.textContent = `table, th, td { border: 5px solid black; }`;
       
         let head = document.head;
       

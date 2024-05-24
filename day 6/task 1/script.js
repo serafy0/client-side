@@ -15,12 +15,24 @@ function randomColor() {
 }
 
 
+var counter=2
 
+// let mainSquare =document.getElementById("1")
 
 function createNewDiv(div) {
-    let newDiv = div.cloneNode(true);
+    console.log(div)
+    // if(div.id=="1"){
+    let newDiv = div.cloneNode();
+    // newDiv.id = counter++
+    // newDiv.onclick = 0;
+    newDiv.style.backgroundColor = getTrueRandomColor();
+    let container = document.getElementsByClassName("container")[0]
+    container.appendChild(newDiv)
+    // }
 
-    newDiv.style.backgroundColor = randomColor();
-    document.body.appendChild(newDiv)
 
 }
+
+
+
+//div element with width and heigtt. others should not click

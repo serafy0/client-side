@@ -13,13 +13,13 @@ var result = 0;
 function EnterNumber(newNum) {
     console.log(Number(newNum))
     let input = getInput()
-    if(!isNaN(input.value)){
-input.value+=newNum
-number+=newNum
-    }else{
+    if (!isNaN(input.value)) {
+        input.value += newNum
+        number += newNum
+    } else {
         number = newNum;
         input.value = newNum;
-    
+
     }
 
 
@@ -30,7 +30,7 @@ number+=newNum
 
 function EnterOperator(newOp) {
 
-    if(olderNumber!=0 && number!=0){
+    if (olderNumber != 0 && number != 0) {
         EnterEqual();
     }
     console.log(newOp)
@@ -59,25 +59,25 @@ function EnterEqual() {
     let input = getInput()
     let lefthand = Number(olderNumber);
     let rightHang = Number(number)
-    let result 
+    let result
     if (operator == "+") {
         result = lefthand + rightHang
 
     } else if (operator == "-") {
-        result =lefthand - rightHang
+        result = lefthand - rightHang
 
     }
     else if (operator == "/") {
         result = lefthand / rightHang
 
-     }else if (operator == "*"){
+    } else if (operator == "*") {
         result = lefthand * rightHang
 
-     }else{
-        result =input.value
-     }
-     input.value = result
-     number = result
-     operator = ""
+    } else {
+        result = input.value
+    }
+    input.value = result
+    number = result
+    operator = ""
 
 }
