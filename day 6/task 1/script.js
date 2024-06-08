@@ -21,14 +21,10 @@ var counter=2
 
 function createNewDiv(div) {
     console.log(div)
-    // if(div.id=="1"){
     let newDiv = div.cloneNode();
-    // newDiv.id = counter++
-    // newDiv.onclick = 0;
     newDiv.style.backgroundColor = getTrueRandomColor();
     let container = document.getElementsByClassName("container")[0]
     container.appendChild(newDiv)
-    // }
 
 
 }
