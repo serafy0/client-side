@@ -33,7 +33,7 @@ function takeDateAndReturnDay(datString){
 
 }
 
-let date = promt("enter date ")
+let date = prompt("enter date ")
 
 takeDateAndReturnDay("1999-10-15")
 
