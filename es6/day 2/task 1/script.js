@@ -2,26 +2,11 @@ function getUsers() {
     usersURL = "https://jsonplaceholder.typicode.com/users"
     return fetch(usersURL).then((response) => {
         return response.json()
+    }).catch((err) => {
+        console.log(err)
     })
-        .catch((err) => {
-            console.log(err)
-        })
 
 }
-
-    getUsers().then(async (data) => {
-        console.log(data)
-
-        showUserCards(data)
-
-        addUserEvents();
-
-        let posts = await getPosts(data[0].id)
-        addPostsToDOM(posts)
-    
-    })
-
-
 
 function showUserCards(users) {
     let container = document.getElementsByClassName("container")[0]
@@ -95,3 +80,18 @@ function addPostsToDOM(posts) {
         container.appendChild(newPost)
     })
 }
+
+
+getUsers().then(async (data) => {
+    console.log(data);
+
+    showUserCards(data);
+
+    addUserEvents();
+    let post = document.getElementById(data[0].id)
+    let posts = await getPosts(data[0].id)
+
+
+    addPostsToDOM(posts)
+
+})
