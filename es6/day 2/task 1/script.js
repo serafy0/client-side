@@ -9,9 +9,6 @@ function getUsers() {
 
 }
 
-
-document.addEventListener("DOMContentLoaded", () => {
-
     getUsers().then(async (data) => {
         console.log(data)
 
@@ -25,8 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
-
-})
 
 function showUserCards(users) {
     let container = document.getElementsByClassName("container")[0]
