@@ -12,13 +12,19 @@ function getUsers() {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    getUsers().then((data) => {
+    getUsers().then(async (data) => {
         console.log(data)
 
         showUserCards(data)
 
         addUserEvents();
+
+        let posts = await getPosts(data[0].id)
+        addPostsToDOM(posts)
+    
     })
+
+
 
 })
 
