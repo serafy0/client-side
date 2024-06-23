@@ -1,0 +1,191 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: wheat;
+}
+
+.card-container {
+    display: flex;
+    background-color: saddlebrown;
+    flex-direction: column;
+    width: 206px;
+    height: 206px;
+    flex-basis: 15%;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+
+
+}
+
+
+.card-container:hover:not(.clicked) {
+    animation-name: newBackChange;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-direction: forwards;
+    background-color: brown;
+
+
+}
+
+
+
+
+
+p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.container {
+
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+
+}
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 1px orange;
+    color: red;
+    background-color: white;
+    box-shadow: inset 0px 0px 3px 5px white;
+    border: 2px solid black;
+    padding: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.icon:hover {
+    animation-name: change;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-direction: alternate;
+
+    background-color: red;
+    color: white;
+}
+
+
+.icon:not(hover) {
+    animation-name: newChange;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-direction: forwards;
+    background-color: white;
+    color: red;
+
+
+
+}
+
+
+@keyframes change {
+    from {
+        background-color: white;
+        color: red;
+
+    }
+
+    to {
+
+        background-color: red;
+        color: white;
+
+    }
+}
+
+
+
+@keyframes newChange {
+    from {
+        background-color: red;
+        color: white;
+    }
+
+    to {
+        background-color: white;
+        color: red;
+
+    }
+}
+
+
+@keyframes newBackChange {
+    from {
+        background-color: brown;
+
+    }
+
+    to {
+
+        background-color: saddlebrown;
+
+    }
+}
+
+
+
+@keyframes backChange {
+    from {
+        background-color: brown;
+    }
+
+    to {
+        background-color: saddlebrown;
+
+    }
+}
+
+.clicked {
+    background-color: green;
+}
+
+.posts-container {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+}
+
+.post {
+    display: flex;
+    background-color: grey;
+    flex-direction: column;
+    width: 50%;
+    height: 206px;
+    flex-basis: 40%;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+
+}
