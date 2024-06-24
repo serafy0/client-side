@@ -31,7 +31,7 @@ function* fib1(n) {
       
     }
 console.log("----------")
-    for(ele of fibMax(21)){
+    for(ele of fibMax(7)){
         console.log(ele)
     }
     

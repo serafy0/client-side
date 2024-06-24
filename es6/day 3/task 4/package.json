@@ -4,5 +4,5 @@
   "scripts": {
     "start": "node script.js"
   },
-  "type": "module" 
+  "type": "module"
 }

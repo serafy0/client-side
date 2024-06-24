@@ -9,7 +9,16 @@ function invalidString(s) {
 }
 
 let handler = {
+    get(obj,prop,value){
+        if(!obj.hasOwnProperty(prop)){
+            console.log("this property does not exsit in object")
+            return;
+    }
+
+    },
+
     set(obj, prop, value) {
+
         if (prop === 'name') {
             if (typeof value !== 'string' || value.length != 7) {
                 console.log(invalidString(value), "name must have 7 letters")

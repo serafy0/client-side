@@ -12,7 +12,7 @@ export default class Rectangle extends Shape {
     }
 
     perimeter() {
-        return 2 * (this.height * this.width)
+        return 2 * (this.height + this.width)
     }
 
     get name() {
@@ -21,3 +21,4 @@ export default class Rectangle extends Shape {
 
 
 }
+
