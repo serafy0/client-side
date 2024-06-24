@@ -1,0 +1,8 @@
+{
+  "name": "task-4",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "type": "module" 
+}
